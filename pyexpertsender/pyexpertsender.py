@@ -15,7 +15,7 @@ class PyExpertSender:
         self.transactionals = PyExpertSender.TransactionalEmails(api_url, api_key)
 
     class Lists:
-        path = '/Api/Lists'
+        path = '/v2/Api/Lists'
 
         def __init__(self, api_url, api_key):
             self.api_url = api_url
@@ -48,7 +48,7 @@ class PyExpertSender:
             ]
 
     class Subscribers:
-        path = '/Api/Subscribers'
+        path = '/v2/Api/Subscribers'
 
         def __init__(self, api_url, api_key):
             self.api_url = api_url
@@ -89,7 +89,7 @@ class PyExpertSender:
             return r
 
     class Fields:
-        path = '/Api/Fields'
+        path = '/v2/Api/Fields'
 
         def __init__(self, api_url, api_key):
             self.api_url = api_url
@@ -119,7 +119,7 @@ class PyExpertSender:
             ]
 
     class CustomWorkflows:
-        path = '/Api/WorkflowCustomEvents'
+        path = '/v2/Api/WorkflowCustomEvents'
 
         def __init__(self, api_url, api_key):
             self.api_url = api_url
@@ -139,7 +139,7 @@ class PyExpertSender:
             )
 
     class TransactionalEmails:
-        path = '/Api/Transactionals/'
+        path = '/v2/Api/Transactionals/'
 
         def __init__(self, api_url, api_key):
             self.api_url = api_url
